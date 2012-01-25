@@ -102,7 +102,7 @@ img {
 
 /* Mobile */
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 787px) {
 
 	body {
 	font-size: 16px;
