@@ -127,4 +127,10 @@ img {
 	padding-right: 20px;
 	}
 
+    .footer nav ul li
+    {
+        font-size: 150%;
+        text-indent: 20px;
+    }
+
 }

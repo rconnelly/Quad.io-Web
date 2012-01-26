@@ -250,21 +250,32 @@ body {
     background: linear-gradient(top, #265287 0%,#2D74BA 100%);
 }
 
+.container.banner h1
+{
+    font-family: "Museo Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 250%;
+    text-shadow: 2px 2px 0 #000;
+    padding: 20px 0;
+}
 
 .container.banner p
 {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    padding: 0px 0 20px 0;
+    font-size: 125%;
     margin-top: 0;
-    line-height: 339px;
+    font-weight: lighter;
 }
-
 
 .container.content
 {
-    border-top: solid 2px #eee;
-    background: -moz-linear-gradient(top, #dbd9e3 0%, #fff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbd9e3), color-stop(100%,#fff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #dbd9e3 0%,#fff 100%);
-    background: linear-gradient(top, #dbd9e3 0%,#fff 100%);
+    border-top: solid 1px #eee;
+    background: -moz-linear-gradient(top, #dbd9e3 0%, #fff 60%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbd9e3), color-stop(60%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #dbd9e3 0%,#fff 60%);
+    background: linear-gradient(top, #dbd9e3 0%,#fff 60%);
 }
 
 
@@ -301,7 +312,7 @@ body {
 .container.content section.twitter article,
 .container.content section.blog article
 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .container.content section.twitter article.last-article,
@@ -314,7 +325,7 @@ body {
 {
     color: #265185;
     font-size: 90%;
-    line-height: 90%;
+    line-height: 120%;
 }
 
 .container.content section.twitter .twitter-logo
@@ -325,18 +336,18 @@ body {
 
 .container.content section.blog .blog-logo
 {
-    background-image: url(../img/social/feed.png);
+    background-image: url(../img/social/rss.png);
 }
 
 .container section header h2
 {
-    font-size: 125%;
-    line-height: 125%;
+    font-size: 160%;
+    line-height: 140%;
 }
 
 .container.content section article
 {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .container section article h3
@@ -370,7 +381,8 @@ body {
 
 .container.footer
 {
-    background: url(../img/footer_background.png) repeat-x top left;
+    border-top: solid 1px #ccc;
+    background-color: #f7f7f7;
 }
 
 .container.footer header h2
@@ -406,9 +418,10 @@ address ul li
 
 address .companyname
 {
-    font-size: 110%;
+    background: url(../img/small_logo_03.png) no-repeat left 50%;
+    font-size: 125%;
     font-weight: bold;
-    padding: 0 0 10px 30px;
+    padding: 5px 0 5px 30px;
 }
 
 address .address
@@ -428,7 +441,7 @@ address .email
 
 .container.footer
 {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .container .contact aside
@@ -451,38 +464,16 @@ address .email
     float: right;
 }
 
-.arrows {
-    float: right;
-    vertical-align: middle;
+.container.copyright p{
+    line-height: 40px;
+    padding: 20px 0;
 }
-.arrows a
+
+.container.copyright
 {
-    text-indent: -99999px;
-    width: 50px; height: 50px;
-    display: block;
-    float: right;
+    border-top: solid 1px #ccc;
+    background-color: #eee;
 }
-
-.arrows a#left
-{
-    margin-right: 40px;
-    background: url("../img/arrows/left_arrow_enabled.png") no-repeat top left;
-}
-
-.arrows a#left.disabled {
-    background: url("../img/arrows/left_arrow_disabled.png") no-repeat top left;
-}
-
-.arrows a#right
-{
-    margin-right: 40px;
-    background: url("../img/arrows/right_arrow_enabled.png") no-repeat top left;
-}
-
-.arrows a#right.disabled {
-    background: url("../img/arrows/right_arrow_disabled.png") no-repeat top left;
-}
-
 /*
  * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
  */
