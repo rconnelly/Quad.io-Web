@@ -421,7 +421,6 @@ address .companyname
     background: url(../img/small_logo_03.png) no-repeat left 50%;
     font-size: 125%;
     font-weight: bold;
-    padding: 5px 0 5px 30px;
 }
 
 address .address
@@ -444,11 +443,11 @@ address .email
     padding-bottom: 40px;
 }
 
-.container .contact aside
+.container .contact address
 {
-    margin-top: 20px;
-    width: 170px;
-    height: 150px;
+    padding: 20px;
+    width: auto;
+    margin: 20px auto 0 auto;
     background-color: #eee;
     border: solid 1px #666;
     border-radius: 10px;
@@ -459,10 +458,6 @@ address .email
     margin-top: 20px;
 }
 
-.container .contact address
-{
-    float: right;
-}
 
 .container.copyright p{
     line-height: 40px;
@@ -471,8 +466,13 @@ address .email
 
 .container.copyright
 {
-    border-top: solid 1px #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     background-color: #eee;
+}
+
+.container.copyright p{
+    margin-top: 0;
 }
 /*
  * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
