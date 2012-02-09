@@ -375,7 +375,6 @@ body {
 
 /** NAV **/
 
-
 .container.header nav {
     line-height: 70px;
 }
@@ -391,8 +390,7 @@ body {
     background-color: #eee;
 }
 
-.container.header nav ul li a
-{
+.container.header nav ul li a {
     text-decoration: none;
     display: block;
     font-size: 120%;
@@ -445,6 +443,7 @@ body {
 .container.content section {
     margin-top: 60px;
 }
+
 /* Footer */
 
 .container.footer section {
@@ -458,8 +457,7 @@ body {
 .container.footer {
 }
 
-.container.footer .links
-{
+.container.footer .links {
     display: none;
 }
 
@@ -512,9 +510,7 @@ body {
 }
 
 .container.content header, .container.footer header {
-    background-position: bottom;
-    background-image: url(../img/line.png);
-    background-repeat: repeat-x;
+    background: url(../img/line.png) repeat-x bottom;
 }
 
 .container.content section header p {
@@ -613,11 +609,10 @@ address .email {
     margin-top: 0;
 }
 
-
-.container.copyright .last p
-{
+.container.copyright .last p {
     display: none;
 }
+
 /*
 * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
 */
@@ -641,7 +636,7 @@ address .email {
         margin-right: 30px;
         display: inline;
         font-size: 110%;
-        border:none;
+        border: none;
         background-color: transparent;
     }
 
@@ -652,26 +647,24 @@ address .email {
     }
 
     .container.header nav ul li a:hover {
-        background: url(../img/top_nav_bg_left.png) left top no-repeat, url(../img/top_nav_bg_right.png) right top no-repeat, url(../img/top_nav_bg_middle.png) 50% top no-repeat;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAA5CAYAAADQksChAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzVFNDhFRjRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzVFNDhGMDRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3NUU0OEVENEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3NUU0OEVFNEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VGqYSQAAAT5JREFUeNrs171KA0EQB/CZ/bykCaQKCD6D1aW1FKy0EXwDW8HCxhcQfBKbFD6EgbyEoITgB9FcLncXz8wWF8LlEnO7FhY78G+O5Xezu9MsvoxeYUO1KWeUI8oe5YDCqxaKim8NygXlRknREpwBQwTO2KafrSEdSk9LEWopgTGEXUqUgMeGVvuBklCnCkSZDgxAgbpVIJeBVmEz0GBTBmlRrprUASJaI8dayTbnHGzLICeBsu+iQEIphRNiJqjDtgzSrp0o5tDF8orREXHbh0c84hGPeMQjHvHIP0bSnz9AhnmeOyODLJs7I/ezJHVGHuIkef922JJBxpTbaBo7X/FdFM/6E0uoQMyhnH5F0ycbaHXYnildgvqfkwjqnFF5YoeUQ9ra9ejtY2ywJE0hm28fAfzlXXxeehdX1kKAAQAg7VLg3T5FfgAAAABJRU5ErkJggg==) left top no-repeat,
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAA5CAYAAADQksChAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3OUE2RTRCODRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3OUE2RTRCOTRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3NUU0OEY1NEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3NUU0OEY2NEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Q6YtMAAAAW9JREFUeNrsl0tKxEAQhqvz6ESXiqAILryCoIdwIXoUj+BKEIRZeYMBl+7mCrqaMwg+8DEwY7oz08l0rIqJRJ3R2O1K+oefTkLqS9GVRf/s9uGpgNmaovvoG3QPfY4efH5pbWUZmBBiHgSmWoMuCsinGlSWD/HREfoMnX6ASCnnQprSuoBJlqHzK7zdQ9/XEI8xBm3s+x4sxhEsRHwbay/Rq/UHWkNqI4S8gbUXaG4EIVNH8VtHhwRhSqlWe/J1jzQMRglNazMgsol834eIh0sTle0aQ0gx54CQfStIGAa0bHlgIc8ry9etOqkquRXkvSP4AzmIgziIgziIgziIg/wrSHUAVlYQOhBTULCCZHlOS98KggdhWnrGEApUMh3T2b5rDBGyDF8nGJqGRpAEASIdUwI7NRoxAV6EvMbLAxrvryC0B6NEEIA62KlSaqngpxHSv0BTwPYpjR6jO800WkLuHp+/4zRzcXdWLia9CjAAUN6JdTgJdNYAAAAASUVORK5CYII=) right top no-repeat,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA5CAIAAAB4XtYeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzVFNDhGMzRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzVFNDhGNDRBRDMxMUUxOTFERUI4RTQxNDE0NDVGMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3NUU0OEYxNEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3NUU0OEYyNEFEMzExRTE5MURFQjhFNDE0MTQ0NUYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+33O4fgAAAClJREFUeNpiePbqDcPXr1+ZGBkZ8WIGBgYQzfD//38we6jg56/fAgQYAEX9C9+1Ct1wAAAAAElFTkSuQmCC) 50% top no-repeat;
         background-size: auto, auto, 85% 57px;
         color: black;
     }
 
-    .container .header p{
+    .container .header p {
         text-align: left;
     }
 
-    .container.footer .links
-    {
+    .container.footer .links {
         display: block;
     }
 
-
-    .container.copyright .last p
-    {
+    .container.copyright .last p {
         display: block;
     }
-
 
     .container.header {
         background: #265185; /* Old browsers */
@@ -689,8 +682,6 @@ address .email {
 
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-
-
 
 }
 
