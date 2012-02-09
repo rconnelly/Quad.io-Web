@@ -54,13 +54,22 @@
     <macrodef name="git-clone">
         <attribute name="repository"/>
         <attribute name="dest"/>
-        <sequential>
+         <sequential>
             <git command="clone">
                 <args>
                     <arg value="@{repository}"/>
                     <arg value="@{dest}"/>
                 </args>
             </git>
+         </sequential>
+    </macrodef>
+    
+    <macrodef name="git-clone-pull">
+        <attribute name="repository"/>
+        <attribute name="dest"/>
+        <sequential>
+            <git-clone repository="@{repository}" dest="@{dest}" />
+            <git command="pull" />
         </sequential>
     </macrodef>
 
@@ -76,7 +85,7 @@
         <element name="args" optional="true"/>
         <sequential>
             <exec executable="jekyll">
-                <args/>
+                <arg value="--no-auto" />
             </exec>
         </sequential>
     </macrodef>
@@ -167,17 +176,12 @@
         </if>
     </target>
 
-    <target name="deploy" depends="git-clone,build,git-deploy" />
+    <target name="deploy" depends="git-clone-pull,build,git-deploy" />
     
-    <target name="git-clone">
+    <target name="git-clone-pull">
         
         <sequential>
-            <echo message="Removing existing repo if one is there..."/>
-            <exec executable="rm">
-                <arg value="-rf"/>
-                <arg value="${dir.publish}"/>
-            </exec>
-            <git-clone repository="git@github.com:rconnelly/rconnelly.github.com.git" dest="${dir.publish}" />
+            <git-clone-pull repository="git@github.com:rconnelly/rconnelly.github.com.git" dest="${dir.publish}" />
         </sequential>
 
     </target>
@@ -802,7 +806,7 @@ This outofdate check ensures that the html files have the markers for us to repl
 
                 <echo>Add manifest attribute to HTML:</echo>
                 <replaceregexp match="&lt;html (.*?)>\s*?&lt;!--&lt;!\[endif"
-                               replace='&lt;html \1 manifest="${file.manifest}"> &lt;!--&lt;![endif' flags="g">
+                               replace='&lt;html \1 manifest="/${file.manifest}"> &lt;!--&lt;![endif' flags="g">
                     <fileset dir="./${dir.intermediate}" includes="${page-files}"/>
                 </replaceregexp>
 
