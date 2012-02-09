@@ -266,8 +266,7 @@
         </if>
     </target>
 
-    <target name="clean" depends="-clean"/>
-
+    <target name="clean" depends="-clean, -clean-jekyll"/>
 
     <!-- JSLint target, run separately -->
     <target name="jslint" depends="jekyll-build">
@@ -503,6 +502,14 @@
         <delete dir="./${dir.publish}/"/>
     </target>
 
+    
+    <target name="-clean-jekyll" description="(PRIVATE) Wipe the jekyll deploy directory">
+        <!-- This is a private target -->
+        <echo message="Cleaning up previous jekyll directory..."/>
+        <delete dir="./${dir.jekyll}/"/>
+    </target>
+    
+    
 
     <target name="-intro" description="(PRIVATE) Kindly inform the developer about the impending magic">
         <!-- This is a private target -->
