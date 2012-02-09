@@ -367,6 +367,16 @@ body {
 
 /** Header **/
 
+.container.header {
+    background: #265185; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(25%, #fff), color-stop(100%, #dbd9e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%);
+    background: linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%);
+    background-repeat: repeat-x;
+    border-bottom: solid 1px #e7ecf1;
+}
+
 .container.header p {
     margin-top: 0;
     line-height: 100px;
@@ -387,15 +397,13 @@ body {
 
 .container.header nav ul li {
     border-top: solid 1px #666;
+    display: block;
+    font-size: 120%;
     text-align: center;
     background-color: #eee;
 }
 
-.container.header nav ul li a
-{
-    text-decoration: none;
-    display: block;
-    font-size: 120%;
+.container.header nav ul li:hover {
 }
 
 /** Logo **/
@@ -445,7 +453,6 @@ body {
 .container.content section {
     margin-top: 60px;
 }
-/* Footer */
 
 .container.footer section {
     margin-top: 60px;
@@ -457,13 +464,6 @@ body {
 
 .container.footer {
 }
-
-.container.footer .links
-{
-    display: none;
-}
-
-/** twitter / blog*/
 
 .container.content section.twitter .twitter-logo,
 .container.content section.blog .blog-logo {
@@ -613,11 +613,6 @@ address .email {
     margin-top: 0;
 }
 
-
-.container.copyright .last p
-{
-    display: none;
-}
 /*
 * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
 */
@@ -640,48 +635,21 @@ address .email {
     .container.header nav ul li {
         margin-right: 30px;
         display: inline;
-        font-size: 110%;
+        padding: 15px 30px 14px 30px;
+        font-size: 130%;
         border:none;
         background-color: transparent;
     }
 
-    .container.header nav ul li a {
-        padding: 15px 20px;
-        text-decoration: none;
-        display: inline;
-    }
-
-    .container.header nav ul li a:hover {
+    .container.header nav ul li:hover {
         background: url(../img/top_nav_bg_left.png) left top no-repeat, url(../img/top_nav_bg_right.png) right top no-repeat, url(../img/top_nav_bg_middle.png) 50% top no-repeat;
-        background-size: auto, auto, 85% 57px;
-        color: black;
+        background-size: auto, auto, 80% 100%;
     }
 
     .container .header p{
         text-align: left;
     }
 
-    .container.footer .links
-    {
-        display: block;
-    }
-
-
-    .container.copyright .last p
-    {
-        display: block;
-    }
-
-
-    .container.header {
-        background: #265185; /* Old browsers */
-        background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(25%, #fff), color-stop(100%, #dbd9e3)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%);
-        background: linear-gradient(top, #ffffff 0%, #ffffff 25%, #dbd9e3 100%);
-        background-repeat: repeat-x;
-        border-bottom: solid 1px #e7ecf1;
-    }
 
 }
 
