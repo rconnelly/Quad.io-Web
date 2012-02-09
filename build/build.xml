@@ -76,7 +76,6 @@
         <element name="args" optional="true"/>
         <sequential>
             <exec executable="jekyll">
-                <arg value="--no-auto"/>
                 <args/>
             </exec>
         </sequential>
@@ -206,7 +205,7 @@
     </target>
 
 
-    <target name="build" depends="jekyll">
+    <target name="build" depends="jekyll-build">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -233,13 +232,15 @@
     </target>
 
 
-    <target name="jekyll">
+    <target name="jekyll-build">
         <echo message="Running Jekyll..."/>
-        <jekyll />
+        <exec executable="jekyll">
+                <arg value="--no-auto" />
+        </exec>
     </target>
 
 
-    <target name="minify" depends="jekyll">
+    <target name="minify" depends="jekyll-build">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -269,7 +270,7 @@
 
 
     <!-- JSLint target, run separately -->
-    <target name="jslint" depends="jekyll">
+    <target name="jslint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -288,7 +289,7 @@
 
 
     <!-- JSHint target, run separately -->
-    <target name="jshint" depends="jekyll">
+    <target name="jshint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -306,7 +307,7 @@
     </target>
 
     <!-- CSSLint target, run separately -->
-    <target name="csslint" depends="jekyll">
+    <target name="csslint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.css}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.css}/*.css"/>
