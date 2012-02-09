@@ -1,0 +1,9 @@
+{% if page.name == 'products' %}
+      {% assign productsPageSelected = 'selected' %}
+{% elsif page.name == 'home' %}
+      {% assign homePageSelected = 'selected' %}
+{% elsif page.name == 'services' %}
+      {% assign servicesPageSelected = 'selected' %}
+{% elsif page.name == 'team' %}
+      {% assign teamPageSelected = 'selected' %}
+{% endif %}

@@ -1,0 +1,25 @@
+<div class="container dropdownnav">
+    <div class="row">
+        <div class="twelvecol last dropdown-nav">
+            <nav>
+                <select id="pageSelect" name="pageSelect">
+                    <option value="/" {{ homePageSelected }}>
+                        Home
+                    </option>
+                    <option value="/products/" {{ productsPageSelected }}>
+                        Products
+                    </option>
+                    <option value="/services/" {{ servicesPageSelected }}>
+                        Services
+                    </option>
+                    <option value="/blog/">
+                        Blog
+                    </option>
+                    <option value="/team/" {{ teamPageSelected }}>
+                        Team
+                    </option>
+                </select>
+            </nav>
+        </div>
+    </div>
+</div>

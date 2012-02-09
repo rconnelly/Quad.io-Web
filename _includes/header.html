@@ -1,19 +1,24 @@
+
+{% include nav_init %}
+
 <div class="container header">
     <div class="row">
         <div class="fourcol logo">
             <p><a href="/"><img src="/img/logo.png" alt="Quad.io" /></a></p>
         </div>
-        <div class="eight last top-nav">
+        <div class="eightcol last top-nav">
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/products/">Products</a></li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="/team/">Team</a></li>
+                    <li><a href="/products/" class="{{ productsPageSelected }}">Products</a></li>
+                    <li><a href="/services/" class="{{ servicesPageSelected }}">Services</a></li>
+                    <li><a href="/blog/" class="">Blog</a></li>
+                    <li><a href="/team/" class="{{ teamPageSelected }}">Team</a></li>
                 </ul>
             </nav>
 
         </div>
     </div>
 </div>
+
+{% include dropdown_nav.html %}

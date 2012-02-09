@@ -176,9 +176,9 @@
         </if>
     </target>
 
-    <target name="deploy" depends="git-clone-pull,build,git-deploy" />
+    <target name="deploy" depends="clean,-git-clone-pull,build,-git-deploy" />
     
-    <target name="git-clone-pull">
+    <target name="-git-clone-pull">
         
         <sequential>
             <git-clone-pull repository="git@github.com:rconnelly/rconnelly.github.com.git" dest="${dir.publish}" />
@@ -186,7 +186,7 @@
 
     </target>
         
-    <target name="git-deploy">
+    <target name="-git-deploy">
         <sequential>
             <echo message="Adding files..."/>
             <git command="add" dir="${dir.publish}">
