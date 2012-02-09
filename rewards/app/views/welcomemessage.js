@@ -20,7 +20,9 @@ quadio.views.WelcomeMessage = Ext.extend(Ext.Panel, {
 		text: 'Round'
 	}
 	],
-	tpl: '<strong>You got a Deal!</strong><br/ ><br /><img class="imgUrl" src="http://src.sencha.io/50/50/{imgUrl}" /><br /><strong>{name}</strong><br />{description}</p>',
+	tpl: ['<div><strong>You got a Deal!</strong> <br/ ><br />',
+          '<img class="imgUrl" src="http://src.sencha.io/50/50/{imgUrl}" /><br />',
+          '<strong>{name}</strong><br />{description}</p></div>'],
 	scroll: 'vertical',
 	initComponent: function() {
 		var storeId = quadio.getUrlParam('sid');

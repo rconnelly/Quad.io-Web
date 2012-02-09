@@ -6,35 +6,38 @@
  * generated correctly.
  */
 quadio.views.Viewport = Ext.extend(Ext.TabPanel, {
-	id        : 'viewport',
-	fullscreen: true,
-	sortable: true,
-	cardSwitchAnimation: 'slide',
-	tabBar: {
-		dock: 'bottom',
-		layout: {
-			pack: 'center'
-		},
-		scroll: {
-			direction: 'horizontal',
-			useIndicators: false
-		},
-	},
-	items: [{
-		xtype: 'dealscard'
-	},{
-		xtype: 'offerscard'
-	},{
-		xtype: 'pointscard'
-	},{
-		xtype: 'accountcard'
-	}
-	],
-	initComponent: function() {
-		
-		quadio.views.Viewport.superclass.initComponent.apply(this, arguments);
-		
-		quadio.welcomeMessage = new quadio.views.WelcomeMessage();
-		quadio.welcomeMessage.show('pop');
-	}
+    id:'viewport',
+    fullscreen:true,
+    sortable:true,
+    cardSwitchAnimation:'slide',
+    tabBar:{
+        dock:'bottom',
+        layout:{
+            pack:'center'
+        },
+        scroll:{
+            direction:'horizontal',
+            useIndicators:false
+        }
+    },
+    items:[
+        {
+            xtype:'offerscard'
+        },
+        {
+            xtype:'pointscard'
+        },
+        {
+            xtype:'accountcard'
+        },
+        {
+            xtype:'accountcard'
+        }
+    ],
+    initComponent:function () {
+
+        quadio.views.Viewport.superclass.initComponent.apply(this, arguments);
+        quadio.welcomeMessage = new quadio.views.WelcomeMessage();
+        quadio.welcomeMessage.show('pop');
+    }
 });

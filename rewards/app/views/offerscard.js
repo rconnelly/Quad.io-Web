@@ -6,14 +6,20 @@ quadio.views.OffersCard = Ext.extend(Ext.TabPanel, {
 	},
 	dockedItems: [{
 		xtype: 'toolbar',
-		title: 'Offers'
+		title: 'Deals'
 	}],
 	items: [{
-		title: 'New',
+		title: 'Local Deals',
 		scroll: 'vertical',
 		html: '<p>This is cool</p>',
 		xtype: 'dealslist'
-	},{
+	},
+    {
+        title: 'Your Offers',
+        scroll: 'vertical',
+        html: '<p>This is cool</p>',
+        xtype: 'dealslist'
+    },{
 		title: 'Redeemed',
 		scroll: 'vertical',
 		html: '<p>Toolbars are cool</p>',
