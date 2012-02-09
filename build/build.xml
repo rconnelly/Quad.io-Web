@@ -51,7 +51,7 @@
             </exec>
         </sequential>
     </macrodef>
-    <macrodef name="git-clone-pull">
+    <macrodef name="git-clone">
         <attribute name="repository"/>
         <attribute name="dest"/>
         <sequential>
@@ -61,7 +61,6 @@
                     <arg value="@{dest}"/>
                 </args>
             </git>
-            <git command="pull" dir="@{dest}"/>
         </sequential>
     </macrodef>
 
@@ -169,27 +168,40 @@
         </if>
     </target>
 
-    <target name="publish" depends="build">
-
+    <target name="deploy" depends="git-clone,build,git-deploy" />
+    
+    <target name="git-clone">
+        
         <sequential>
-            <echo message="Adding and commiting files..."/>
-            <git command="add" dir="./${dir.publish}">
+            <echo message="Removing existing repo if one is there..."/>
+            <exec executable="rm">
+                <arg value="-rf"/>
+                <arg value="${dir.publish}"/>
+            </exec>
+            <git-clone repository="git@github.com:rconnelly/rconnelly.github.com.git" dest="${dir.publish}" />
+        </sequential>
+
+    </target>
+        
+    <target name="git-deploy">
+        <sequential>
+            <echo message="Adding files..."/>
+            <git command="add" dir="${dir.publish}">
                 <args>
                     <arg value="."/>
                     <arg value="--all"/>
                 </args>
             </git>
-
-            <git command="commit" dir="./${dir.publish}">
+            <echo message="Committing..."/>            
+            <git command="commit" dir="${dir.publish}">
                 <args>
                     <arg value="-m"/>
                     <arg value="empty commit message"/>
                 </args>
             </git>
-
-
-            <git command="push" dir="./${dir.publish}">
-            </git>
+            
+            <echo message="Pushing..."/>  
+            <git command="push" dir="${dir.publish}"></git>
         </sequential>
     </target>
 
