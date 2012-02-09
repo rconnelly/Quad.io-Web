@@ -66,6 +66,23 @@
     </macrodef>
 
 
+
+    <!--
+    *************************************************
+    * Jekyll                                        *
+    *************************************************
+    -->
+
+    <macrodef name="jekyll">
+        <element name="args" optional="true"/>
+        <sequential>
+            <exec executable="jekyll">
+                <arg value="--no-auto"/>
+                <args/>
+            </exec>
+        </sequential>
+    </macrodef>
+
     <!--
     *************************************************
     * BASE TARGETS                                  *
@@ -152,7 +169,7 @@
         </if>
     </target>
 
-    <target name="publish">
+    <target name="publish" depends="build">
 
         <sequential>
             <echo message="Adding and commiting files..."/>
@@ -176,7 +193,8 @@
         </sequential>
     </target>
 
-    <target name="build">
+
+    <target name="build" depends="jekyll">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -203,7 +221,13 @@
     </target>
 
 
-    <target name="minify">
+    <target name="jekyll">
+        <echo message="Running Jekyll..."/>
+        <jekyll />
+    </target>
+
+
+    <target name="minify" depends="jekyll">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -233,7 +257,7 @@
 
 
     <!-- JSLint target, run separately -->
-    <target name="jslint">
+    <target name="jslint" depends="jekyll">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -252,7 +276,7 @@
 
 
     <!-- JSHint target, run separately -->
-    <target name="jshint">
+    <target name="jshint" depends="jekyll">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -270,7 +294,7 @@
     </target>
 
     <!-- CSSLint target, run separately -->
-    <target name="csslint">
+    <target name="csslint" depends="jekyll">
         <apply dir="${dir.source}/${dir.css}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.css}/*.css"/>
