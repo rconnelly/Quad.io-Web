@@ -1,0 +1,14 @@
+<script type="text/html" id="twitterPost">
+    {{#posts}}
+    <article>
+        <h3>@ioQuad</h3>
+
+        <p>{{text}}
+        </p>
+
+        <p class="time"></p>
+    </article>
+
+    <b></b>
+    {{/posts}}
+</script>

@@ -367,12 +367,6 @@ body {
 
 /** Header **/
 
-.container.header p {
-    margin-top: 0;
-    line-height: 100px;
-    text-align: center;
-}
-
 /** DROPDOWN NAV **/
 .dropdownnav
 {
@@ -399,8 +393,12 @@ body {
 
 /** Logo **/
 
-.container.header .logo img {
-    vertical-align: middle;
+.container.header .logo #logoLink {
+    background: url(/img/logo.png) center center no-repeat;
+    width: 218px;
+    height: 63px;
+    display: inline-block;
+    margin:13px 0 10px 0;
 }
 
 /** Banner **/
@@ -473,6 +471,10 @@ body {
 .container.content section.twitter article,
 .container.content section.blog article {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px #bbb;
 }
 
 .container.content section.twitter article.last-article,
@@ -523,6 +525,11 @@ body {
     padding-left: 20px;
     background: url(/img/arrow.png) no-repeat left 50%;
     color: #000;
+}
+
+
+.container .followus p {
+    margin-left: 20px;
 }
 
 .container.footer {
@@ -581,16 +588,7 @@ address .email {
 }
 
 .container .contact address {
-    padding: 20px;
-    width: auto;
-    margin: 20px auto 0 auto;
-    background-color: #eee;
-    border: solid 1px #666;
-    border-radius: 10px;
-}
-
-.container .contact nav {
-    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .container.copyright p {
@@ -627,12 +625,13 @@ address .email {
         text-align: left;
     }
 
-    .container.header .logo img {
-        height: auto;
+    .container.header .row .logo
+    {
+        text-align: center;
     }
 
     .container.header nav {
-        line-height: 100px;
+        line-height: 90px;
         margin: 0px;
         display: block;
     }
@@ -650,7 +649,7 @@ address .email {
     }
 
     .container.header nav ul li a {
-        padding: 17px 20px;
+        padding: 17px 12px;
         text-decoration: none;
         display: inline;
         font-size: 110%
@@ -686,13 +685,23 @@ address .email {
         border-bottom: solid 1px #e7ecf1;
     }
 
+    .container .contact address {
+        margin-left: 0px;
+    }
+
+
+    .container .followus p {
+        margin-left: 0;
+    }
+
+
 }
 
 /*/mediaquery*/
 
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-
+ 
 }
 
 /* ==|== non-semantic helper classes ========================================

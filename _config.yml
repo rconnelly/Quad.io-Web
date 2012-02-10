@@ -27,6 +27,7 @@ author :
 #
 production_url : http://beta.quad.io
 
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 Quad :
