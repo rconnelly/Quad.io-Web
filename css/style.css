@@ -401,6 +401,11 @@ body {
     margin:13px 0 10px 0;
 }
 
+.container.header .row .logo
+{
+    text-align: center;
+}
+
 /** Banner **/
 
 .container.banner {
@@ -635,7 +640,7 @@ address .email {
 
     .container.header .row .logo
     {
-        text-align: center;
+        text-align: left;
     }
 
     .container.header nav {
