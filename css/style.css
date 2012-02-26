@@ -428,6 +428,14 @@ body {
     font-weight: lighter;
 }
 
+
+.container.banner p span {
+    font-size: 110%;
+    margin-right: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
 .container.content {
     border-top: solid 1px #eee;
     background: -moz-linear-gradient(top, #dbd9e3 0%, #fff 60%); /* FF3.6+ */
