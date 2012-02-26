@@ -177,6 +177,10 @@
     </target>
 
     <target name="build">
+        <sequential></sequential>
+    </target>
+
+    <target name="build-env">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
