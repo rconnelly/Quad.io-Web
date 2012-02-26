@@ -51,20 +51,44 @@
             </exec>
         </sequential>
     </macrodef>
-    <macrodef name="git-clone-pull">
+    <macrodef name="git-clone">
         <attribute name="repository"/>
         <attribute name="dest"/>
-        <sequential>
+         <sequential>
             <git command="clone">
                 <args>
                     <arg value="@{repository}"/>
                     <arg value="@{dest}"/>
                 </args>
             </git>
-            <git command="pull" dir="@{dest}"/>
+         </sequential>
+    </macrodef>
+    
+    <macrodef name="git-clone-pull">
+        <attribute name="repository"/>
+        <attribute name="dest"/>
+        <sequential>
+            <git-clone repository="@{repository}" dest="@{dest}" />
+            <git command="pull" />
         </sequential>
     </macrodef>
 
+
+
+    <!--
+    *************************************************
+    * Jekyll                                        *
+    *************************************************
+    -->
+
+    <macrodef name="jekyll">
+        <element name="args" optional="true"/>
+        <sequential>
+            <exec executable="jekyll">
+                <arg value="--no-auto" />
+            </exec>
+        </sequential>
+    </macrodef>
 
     <!--
     *************************************************
@@ -152,35 +176,40 @@
         </if>
     </target>
 
-    <target name="publish">
-
+    <target name="deploy" depends="clean,-git-clone-pull,build,-git-deploy" />
+    
+    <target name="-git-clone-pull">
+        
         <sequential>
-            <echo message="Adding and commiting files..."/>
-            <git command="add" dir="./${dir.publish}">
+            <git-clone-pull repository="git@github.com:rconnelly/rconnelly.github.com.git" dest="${dir.publish}" />
+        </sequential>
+
+    </target>
+        
+    <target name="-git-deploy">
+        <sequential>
+            <echo message="Adding files..."/>
+            <git command="add" dir="${dir.publish}">
                 <args>
                     <arg value="."/>
                     <arg value="--all"/>
                 </args>
             </git>
-
-            <git command="commit" dir="./${dir.publish}">
+            <echo message="Committing..."/>            
+            <git command="commit" dir="${dir.publish}">
                 <args>
                     <arg value="-m"/>
                     <arg value="empty commit message"/>
                 </args>
             </git>
-
-
-            <git command="push" dir="./${dir.publish}">
-            </git>
+            
+            <echo message="Pushing..."/>  
+            <git command="push" dir="${dir.publish}"></git>
         </sequential>
     </target>
 
-    <target name="build">
-        <sequential></sequential>
-    </target>
 
-    <target name="build-env">
+    <target name="build" depends="jekyll-build">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -207,7 +236,15 @@
     </target>
 
 
-    <target name="minify">
+    <target name="jekyll-build">
+        <echo message="Running Jekyll..."/>
+        <exec executable="jekyll">
+                <arg value="--no-auto" />
+        </exec>
+    </target>
+
+
+    <target name="minify" depends="jekyll-build">
         <if>
             <equals arg1="${env}" arg2="dev"/>
             <then>
@@ -233,11 +270,10 @@
         </if>
     </target>
 
-    <target name="clean" depends="-clean"/>
-
+    <target name="clean" depends="-clean, -clean-jekyll"/>
 
     <!-- JSLint target, run separately -->
-    <target name="jslint">
+    <target name="jslint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -256,7 +292,7 @@
 
 
     <!-- JSHint target, run separately -->
-    <target name="jshint">
+    <target name="jshint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.js}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.js}/*.js"/>
@@ -274,7 +310,7 @@
     </target>
 
     <!-- CSSLint target, run separately -->
-    <target name="csslint">
+    <target name="csslint" depends="jekyll-build">
         <apply dir="${dir.source}/${dir.css}" executable="java" parallel="false" failonerror="true">
             <fileset dir="./${dir.source}/">
                 <include name="**/${dir.css}/*.css"/>
@@ -470,6 +506,14 @@
         <delete dir="./${dir.publish}/"/>
     </target>
 
+    
+    <target name="-clean-jekyll" description="(PRIVATE) Wipe the jekyll deploy directory">
+        <!-- This is a private target -->
+        <echo message="Cleaning up previous jekyll directory..."/>
+        <delete dir="./${dir.jekyll}/"/>
+    </target>
+    
+    
 
     <target name="-intro" description="(PRIVATE) Kindly inform the developer about the impending magic">
         <!-- This is a private target -->
@@ -762,7 +806,7 @@ This outofdate check ensures that the html files have the markers for us to repl
 
                 <echo>Add manifest attribute to HTML:</echo>
                 <replaceregexp match="&lt;html (.*?)>\s*?&lt;!--&lt;!\[endif"
-                               replace='&lt;html \1 manifest="${file.manifest}"> &lt;!--&lt;![endif' flags="g">
+                               replace='&lt;html \1 manifest="/${file.manifest}"> &lt;!--&lt;![endif' flags="g">
                     <fileset dir="./${dir.intermediate}" includes="${page-files}"/>
                 </replaceregexp>
 
