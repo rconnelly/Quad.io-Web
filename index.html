@@ -26,17 +26,24 @@ name: home
                         <p>Check out the latest posts</p>
                     </div>
                 </header>
-                <article class="last-article">
-                    <h3>Lorem Ipsum</h3>
 
-                    <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi. In
-                        posuere lorem non Praesent varius nec gravida neque porttitor. In
-                        Nulla eros non nulla varius nec fermentum neque porttitor.
+                {% for post in site.posts %}
+
+                <article class="last-article">
+                    <p class="post-meta">
+                        <span class="post-author">{{ post.author }}</span>
+                        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
                     </p>
 
-                    <p class="readmore"><a href="#">Read more</a></p>
+                    <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+                    <div class="clear" />
+
+                    <p>{{ post.content | truncatewords:52 }}</p>
+
+                    <p class="readmore"><a href="{{ post.url }}">Read more</a></p>
                 </article>
+                {% endfor %}
 
             </section>
         </div>
@@ -89,8 +96,7 @@ name: home
                     <h2>Follow Us</h2>
                 </header>
                 <p>
-                    Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                    Vivamus enim lorem, dapibus a ut, tempus et nisi.
+                    Facebook, Twitter, and Linked In. We like to be social.
                 </p>
                 <nav>
                     <ul>
