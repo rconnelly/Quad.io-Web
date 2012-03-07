@@ -8,4 +8,6 @@
       {% assign servicesPageSelected = 'selected' %}
 {% elsif page.name == 'team' %}
       {% assign teamPageSelected = 'selected' %}
+{% elsif page.name == 'blog' %}
+      {% assign blogPageSelected = 'selected' %}
 {% endif %}
