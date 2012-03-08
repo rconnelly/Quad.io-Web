@@ -81,7 +81,7 @@
       <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="68" selection-start="556" selection-end="556" vertical-scroll-proportion="0.23051591">
+            <state line="23" column="31" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4020979">
               <folding />
             </state>
           </provider>
@@ -156,7 +156,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1081" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -372,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1081" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -447,13 +447,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/publish/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="953" selection-end="953" vertical-scroll-proportion="-33.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2012-02-27-our-philosophy.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="10" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
@@ -556,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="68" selection-start="556" selection-end="556" vertical-scroll-proportion="0.23051591">
+        <state line="23" column="31" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4020979">
           <folding />
         </state>
       </provider>

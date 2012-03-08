@@ -7,8 +7,8 @@ author: Ryan Connelly
 tags: [philosophy, core, values]
 ---
 #### Founded by Craftsmen  ####
-We founded Quad.io with the goal of building a **software company** focused on building great software products.
-Whether we are building applications for clients or our own customers, we engineer **stable,
+We founded Quad.io with the goal of building a **software company** focused on creating great software products.
+Whether we are developing applications for clients or our own customers, we engineer **stable,
 secure, and testable code**. In a world of mass-produced, careless code, we are proud software craftsmen
 who put **quality above all else**.
 
