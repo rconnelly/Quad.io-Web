@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b8b86f-620e-45d8-ac6c-d3abad638a7f" name="Default" comment="" />
-    <ignored path="quad.io.iws" />
+    <list default="true" id="da7d6e2a-82f4-4105-8abf-b3e133b96b95" name="Default" comment="" />
+    <ignored path="rewards.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,97 +18,68 @@
     <disable_hints />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="quad.io" />
+    <favorites_list name="rewards" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/mylibs/helper.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="32" selection-start="1179" selection-end="1182" vertical-scroll-proportion="303.1154">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="20" column="11" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basejs.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/basejs.html">
+      <file leaf-file-name="viewport.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/viewport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="30" column="30" selection-start="751" selection-end="762" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="copyright.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/copyright.html">
+      <file leaf-file-name="accountcard.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/accountcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.18792711">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dropdown_nav.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/dropdown_nav.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="628" selection-end="644" vertical-scroll-proportion="-8.75">
+            <state line="23" column="80" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <file leaf-file-name="welcomemessage.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcomemessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.833333">
+            <state line="24" column="66" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <file leaf-file-name="dealslist.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dealslist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="31" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4020979">
+            <state line="24" column="16" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav_init" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/nav_init">
+      <file leaf-file-name="offerscard.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/offerscard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugins.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/plugins.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="14" selection-start="13209" selection-end="13211" vertical-scroll-proportion="-25.653847">
+            <state line="33" column="46" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,37 +97,23 @@
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/build/build.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/css/style.css" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/app/views/welcomemessage.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/views/offerscard.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_site/index.html" />
-        <option value="$PROJECT_DIR$/_includes/head.html" />
-        <option value="$PROJECT_DIR$/_site/publish/index.html" />
-        <option value="$PROJECT_DIR$/_site/intermediate/index.html" />
-        <option value="$PROJECT_DIR$/_includes/basejs.html" />
-        <option value="$PROJECT_DIR$/build/config/project.properties" />
-        <option value="$PROJECT_DIR$/CNAME" />
-        <option value="$PROJECT_DIR$/build/build.xml" />
-        <option value="$PROJECT_DIR$/build/config/default.properties" />
-        <option value="$PROJECT_DIR$/publish/index.html" />
-        <option value="$PROJECT_DIR$/_posts/2012-02-27-our-philosophy.md" />
-        <option value="$PROJECT_DIR$/_includes/dropdown_nav.html" />
-        <option value="$PROJECT_DIR$/_includes/nav_init" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
+        <option value="$PROJECT_DIR$/app/views/viewport.js" />
+        <option value="$PROJECT_DIR$/cache.manifest" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1028" />
+    <option name="width" value="1680" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,123 +145,103 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mylibs" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="stores" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proxies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="rewards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quad.io.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,27 +251,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/jobs" />
-      <recent name="$PROJECT_DIR$/services" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" scope="Directory">
-      <TestRunner />
-      <method>
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -345,43 +265,25 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80b8b86f-620e-45d8-ac6c-d3abad638a7f" name="Default" comment="" />
-      <created>1327504055761</created>
-      <updated>1327504055761</updated>
+      <changelist id="da7d6e2a-82f4-4105-8abf-b3e133b96b95" name="Default" comment="" />
+      <created>1328289050234</created>
+      <updated>1328289050234</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20192307" sideWeight="0.9411135" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18259804" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19764957" sideWeight="0.21516588" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -447,109 +349,54 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2012-02-27-our-philosophy.md">
+    <entry file="file://$PROJECT_DIR$/app/models/account.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ie.css">
+    <entry file="file://$PROJECT_DIR$/lib/touch/sencha-touch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/1140.css">
+    <entry file="file://$PROJECT_DIR$/cache.manifest">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="18" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/viewport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="30" selection-start="751" selection-end="762" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="46.416668">
-          <folding />
-        </state>
+        <state line="23" column="80" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/app/views/welcomemessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="716" column="79" selection-start="26212" selection-end="26221" vertical-scroll-proportion="-11.461538">
-          <folding />
-        </state>
+        <state line="24" column="66" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/app/views/dealslist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="16" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+    <entry file="file://$PROJECT_DIR$/app/views/offerscard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="33" column="46" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/basejs.html">
+    <entry file="file://$PROJECT_DIR$/app/views/accountcard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/copyright.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/dropdown_nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="628" selection-end="644" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.833333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="14" selection-start="13209" selection-end="13211" vertical-scroll-proportion="-25.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/nav_init">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mylibs/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="32" selection-start="1179" selection-end="1182" vertical-scroll-proportion="303.1154">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4020979">
+        <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.18792711">
           <folding />
         </state>
       </provider>
