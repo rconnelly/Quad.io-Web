@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/quad.io.web.iml" filepath="$PROJECT_DIR$/.idea/quad.io.web.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/quad.io.iml" filepath="$PROJECT_DIR$/.idea/quad.io.iml" />
+>>>>>>> 21278f71276c3eca606320a6388a5a1832f1693d
+    </modules>
+  </component>
+</project>
+
