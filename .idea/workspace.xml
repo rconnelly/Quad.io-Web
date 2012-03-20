@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="473" column="13" selection-start="9023" selection-end="9023" vertical-scroll-proportion="-5.3461537">
+            <state line="484" column="1" selection-start="9223" selection-end="9223" vertical-scroll-proportion="0.37568307">
               <folding />
             </state>
           </provider>
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="35" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.77911645">
+            <state line="92" column="0" selection-start="3847" selection-end="3847" vertical-scroll-proportion="-31.75">
               <folding />
             </state>
           </provider>
@@ -392,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="473" column="13" selection-start="9023" selection-end="9023" vertical-scroll-proportion="-5.3461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="22" selection-start="812" selection-end="812" vertical-scroll-proportion="-16.875">
@@ -415,7 +408,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.77911645">
+        <state line="92" column="0" selection-start="3847" selection-end="3847" vertical-scroll-proportion="-31.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="484" column="1" selection-start="9223" selection-end="9223" vertical-scroll-proportion="0.37568307">
           <folding />
         </state>
       </provider>
