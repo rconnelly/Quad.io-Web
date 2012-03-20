@@ -466,6 +466,23 @@ body.home .container.content {
 
 .container.footer .links {
 }
+/** Team **/
+
+section.team
+{
+    padding-left: 175px;
+    height:190px;
+}
+
+section.team.ryan
+{
+    background:transparent url('/img/team/ryan.png') no-repeat left top;
+}
+
+section.team.marat
+{
+    background:transparent url('/img/team/marat.png') no-repeat left top;
+}
 
 /** twitter / blog **/
 
