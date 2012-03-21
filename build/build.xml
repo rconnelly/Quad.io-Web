@@ -502,6 +502,7 @@
     <target name="-clean" description="(PRIVATE) Wipe the previous build (Deletes the dir.publish directory">
         <!-- This is a private target -->
         <echo message="Cleaning up previous build directory..."/>
+        <delete dir="./intermediate/"/>
         <delete dir="./${dir.intermediate}/"/>
         <delete dir="./${dir.publish}/"/>
     </target>
@@ -546,7 +547,7 @@
                 <fail message="Your dir.publish folder is set to ${dir.publish} which could delete your entire site or worse. Change it in project.properties"/>
             </then>
             <else>
-                <echo message="Creating directory structure... ${dir.publish}"/>
+                <echo message="Creating directory structure... ${dir.publish} ${dir.intermediate}"/>
 
                 <mkdir dir="${dir.intermediate}"/>
                 <copy todir="${dir.intermediate}" includeEmptyDirs="true">
@@ -586,8 +587,8 @@
     <target name="-js.main.concat" depends="-js.all.minify" description="(PRIVATE) Concatenates the JS files in dir.js">
         <echo message="Concatenating Main JS scripts..."/>
         <!-- overwrite=no here means not to overwrite if the target is newer than the sources -->
-        <concat destfile="./${dir.intermediate}/${dir.js}/scripts-concat.js" overwrite="no">
-            <fileset dir="./${dir.intermediate}/">
+        <concat destfile="${dir.intermediate}/${dir.js}/scripts-concat.js" overwrite="no">
+            <fileset dir="${dir.intermediate}/">
                 <include name="${dir.js.main}/plugins.js"/>
                 <include name="${dir.js.main}/${file.root.script}"/>
             </fileset>
@@ -596,12 +597,12 @@
 
     <target name="-js.mylibs.concat" depends="-js.all.minify"
             description="(PRIVATE) Concatenates the JS files in dir.js.mylibs">
-        <mkdir dir="./${dir.intermediate}/${dir.js.mylibs}"/>
+        <mkdir dir="${dir.intermediate}/${dir.js.mylibs}"/>
 
         <echo message="Concatenating JS libraries"/>
         <!-- overwrite=no here means not to overwrite if the target is newer than the sources -->
-        <concat destfile="./${dir.intermediate}/${dir.js}/mylibs-concat.js" overwrite="no">
-            <fileset dir="./${dir.intermediate}/${dir.js.mylibs}/"
+        <concat destfile="${dir.intermediate}/${dir.js}/mylibs-concat.js" overwrite="no">
+            <fileset dir="${dir.intermediate}/${dir.js.mylibs}/"
                      includes="**/*.js"
                      excludes="${file.js.bypass}"/>
 
@@ -612,8 +613,8 @@
     <target name="-js.scripts.concat" depends="-js.main.concat,-js.mylibs.concat" if="build.concat.scripts">
         <echo message="Concatenating library file with main script file"/>
         <!-- overwrite=no here means not to overwrite if the target is newer than the sources -->
-        <concat destfile="./${dir.intermediate}/${dir.js}/scripts-concat.min.js" overwrite="no">
-            <fileset dir="./${dir.intermediate}/${dir.js}/">
+        <concat destfile="${dir.intermediate}/${dir.js}/scripts-concat.min.js" overwrite="no">
+            <fileset dir="${dir.intermediate}/${dir.js}/">
                 <include name="mylibs-concat.js"/>
                 <include name="scripts-concat.js"/>
             </fileset>
@@ -696,11 +697,11 @@ This outofdate check ensures that the html files have the markers for us to repl
 
         <!-- switch from a regular jquery to minified -->
         <replaceregexp match="jquery-(\d|\d(\.\d)+)\.js" replace="jquery-\1.min.js" flags="g">
-            <fileset dir="./${dir.intermediate}" includes="${page-files}"/>
+            <fileset dir="${dir.intermediate}" includes="${page-files}"/>
         </replaceregexp>
         <!-- switch any google CDN reference to minified -->
         <replaceregexp match="(\d|\d(\.\d)+)\/jquery\.js" replace="\1/jquery.min.js" flags="g">
-            <fileset dir="./${dir.intermediate}" includes="${page-files}"/>
+            <fileset dir="${dir.intermediate}" includes="${page-files}"/>
         </replaceregexp>
 
         <echo>Kill off those versioning flags: ?v=2</echo>
