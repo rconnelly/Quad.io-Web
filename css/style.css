@@ -362,7 +362,7 @@ body {
 }
 
 .container p {
-    color: #6c6c6c;
+    color: #000;
     margin: 10px 0 0 0;
 }
 
@@ -483,6 +483,19 @@ section.team.marat
 {
     background:transparent url('/img/team/marat.png') no-repeat left top;
 }
+
+
+section.team.anatoliy
+{
+    background:transparent url('/img/team/anatoliy.png') no-repeat left top;
+}
+
+
+section.team.dmitriy
+{
+    background:transparent url('/img/team/dmitriy.png') no-repeat left top;
+}
+
 
 /** twitter / blog **/
 
