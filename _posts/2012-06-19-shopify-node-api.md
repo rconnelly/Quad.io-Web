@@ -9,7 +9,11 @@ tags: [shopify, shopnode, github, node, nodejs]
 
 ![Alt Shopify Logo](/img/blogs/shopify.png)
 
-Over the past week, I've been working on implementing an api to [Shopify](http://www.shopify.com) for a side project that we are working on. Apparently, there are no solid node libraries out there for talking with shopify. The only one I found was very limited and didn't support all of the api calls. 
+Over the past week, I've been working on a node api for [Shopify](http://www.shopify.com). It's for a side project that
+we are working on. Apparently, there are no solid node libraries out there for talking with shopify.
+The only one I found was very limited and didn't support all of the api calls. So I decided to write my own module.
+
+The goal is to get it production ready then get it registered with NPM.
 
 Check it out:
 <http://www.quad.io/shopnode>
