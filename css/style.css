@@ -362,7 +362,7 @@ body {
 }
 
 .container p {
-    color: #6c6c6c;
+    color: #000;
     margin: 10px 0 0 0;
 }
 
@@ -466,6 +466,36 @@ body.home .container.content {
 
 .container.footer .links {
 }
+/** Team **/
+
+section.team
+{
+    padding-left: 175px;
+    height:190px;
+}
+
+section.team.ryan
+{
+    background:transparent url('/img/team/ryan.png') no-repeat left top;
+}
+
+section.team.marat
+{
+    background:transparent url('/img/team/marat.png') no-repeat left top;
+}
+
+
+section.team.anatoliy
+{
+    background:transparent url('/img/team/anatoliy.png') no-repeat left top;
+}
+
+
+section.team.dmitriy
+{
+    background:transparent url('/img/team/dmitriy.png') no-repeat left top;
+}
+
 
 /** twitter / blog **/
 
@@ -695,10 +725,11 @@ body.post section.blog h3
     font-size: 130%;
 }
 
-body.post section.blog h4
+body section.blog h4
 {
     margin: 20px 0 10px 0;
 }
+
 
 
 /*
