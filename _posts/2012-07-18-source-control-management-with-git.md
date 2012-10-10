@@ -8,10 +8,10 @@ author: Ryan Connelly
 ---
 
 We try to keep a structured approach to branch management. We love GIT because it provides a straight forward approach
-to branching and merging. For those that have yet to embrace the power of DVCS [http://en.wikipedia.org/wiki/Distributed_revision_control],
+to branching and merging. For those that have yet to embrace the power of [DVCS](http://en.wikipedia.org/wiki/Distributed_revision_control),
 I hightly recommend you at least explore it.
 
-Read about DVCS [here](http://en.wikipedia.org/wiki/Distributed_revision_control).
+[Read about DVCS here](http://en.wikipedia.org/wiki/Distributed_revision_control).
 
 Below is a graph that illustrates how we manage our builds. The goal is to keep our production code stable, without
 slowing our dev cycle down. After some trial and error, we came up with this approach.
